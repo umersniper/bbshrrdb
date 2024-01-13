@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    div{
+        width: 50%;
+        height: 20vh;
+        border:solid 2px firebrick;
+        /* background-color: aqua;
+        opacity: 0.2; */
+    }
+    div::before
+    {
+
+        display: block;        
+        content: "";
+        background-color: aqua;
+        width: 50%;
+        height: 20vh;
+        opacity: 0.2;
+        margin-top: 5px;
+        border:solid 2px green;
+    }
+</style>
+</head>
+<body>
+    <div id="d1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam sed ad animi, sapiente quasi impedit eaque sunt qui assumenda iste? Impedit deserunt quisquam iste voluptate eaque possimus blanditiis aperiam nobis.</div>
+    <div id="d1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam sed ad animi, sapiente quasi impedit eaque sunt qui assumenda iste? Impedit deserunt quisquam iste voluptate eaque possimus blanditiis aperiam nobis.</div>
+</body>
+</html>

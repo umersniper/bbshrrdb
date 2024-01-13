@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #bg
+    {
+        background-color: blue;
+    }        
+    #bg::before
+    {
+        content: '';
+        background-color: aqua;
+        position: absolute;
+        opacity: 0.8;
+        left: 13%;
+        /* display: block; */
+        height: 7vh;
+        width: 50%;
+    }
+       
+       
+        #bg
+        {
+
+            width: 100%;
+            height: 100vh;
+            background: url('https://t3.ftcdn.net/jpg/02/78/37/22/360_F_278372288_RmVLxrzK3rjERKyxXSrME28z5vPicZsu.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        img
+        {
+            position: absolute;
+            width:20%;
+            height: 20vh;
+            top: 500px;
+        }
+        #c1
+        {
+            animation-fill-mode: forwards;
+            animation-name: car1;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        #c2
+        {
+            left: 1300px;
+            animation-name: car2;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes car1 {
+            1%
+            {
+                left: 0px;
+            }
+            50%
+            {
+                left: 600px;
+                transform: rotate(0deg);
+
+            }
+            100%
+            {
+                left: 600px;
+                transform: rotate(180deg);
+            }
+
+        }
+        @keyframes car2 {
+            1%
+            {
+                left: 1300px;
+            }
+            50%
+            {
+                left: 800px;
+                transform: rotate(0deg);
+
+            }
+            100%
+            {
+                left: 800px;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="bg">
+            division
+    </div>
+</body>
+</html>

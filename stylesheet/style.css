@@ -1,0 +1,60 @@
+/* div
+{   
+    color: aqua;
+    background-color: rgb(154, 165, 64);
+    width: 20%;
+    height: 20vh;
+    text-align: center;
+} */
+.c1
+{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+    text-transform: capitalize;
+    text-indent:5%;
+    /* width: 20%; */
+    /* margin: 2% 0 0% 10%; */
+    background-color:rgb(0, 204, 250);
+    opacity: 0.9;
+}
+#i1
+{
+    text-align: center;
+    width: 20%;
+    /* margin: auto; */
+    /* margin-left: 5%;
+    margin-top:5% ;
+    margin-bottom: 5%; */
+    margin: 2% 0 4% 5%;
+    background-color: violet;
+}
+.web
+{
+  
+    background-color: aqua;
+    height: 20vh;
+    width: 20%;
+}
+.design
+{
+    background-color: aquamarine;
+}
+p
+{
+
+}
+img
+{
+
+}
+input
+{
+    background-color: aqua;
+}
+span
+{
+
+}

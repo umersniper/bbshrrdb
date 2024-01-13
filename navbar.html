@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav
+        {
+            width: 80%;
+            margin: auto;
+            height: 10vh;
+            background-color: cornflowerblue;
+        }
+        nav ol 
+        {
+            list-style-type: none;
+        }
+        nav ol li
+        {
+            padding-top:1.5% ;
+            height: 10vh;
+            width: 25%;
+            float: left;
+            text-align: center;
+        }
+        nav ol li a
+        {
+            color:sienna;
+            text-decoration: none;
+            font-size: 22px;
+            padding-left: 3%;
+        }
+        nav ol li:hover
+        {
+            border-bottom: solid 10px blue;
+            background-color: tomato;
+        }
+        nav ol li ol
+        {
+             display: none; 
+        }
+        nav ol li ol li
+        {
+            clear:both;
+            background-color: cornflowerblue;
+            width: 100%;
+        }
+        nav ol li:hover ol
+        {
+              display: block;  
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a>
+                <ol>
+                    <li><a href="#">Images</a></li>
+                    <li><a href="#">Videos</a></li>
+                </ol>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ol>
+    </nav>
+</body>
+</html>

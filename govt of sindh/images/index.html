@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header
+        {
+            border-radius: 10px 1px 1px 1px;
+            background-color: #225622;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav
+        {
+            width:50%;
+            
+        }
+        ol
+        {
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+        li
+        {
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: capitalize;
+            padding-top: 10px;
+            color:white;
+            padding-bottom: 10px;
+        }
+        li:hover
+        {
+            color: #225622;
+            background: white;;
+        }
+        .active
+        {
+            /* background-color: aqua; */
+        }
+        #marquee
+        {
+            font-size: 18px;
+            color:white;
+            margin-top: 20px;
+            background-color: #225622;
+        }
+        #banner img
+        {
+            margin-top:10px; 
+            width: 100%;
+        }
+        #latest
+        {
+            border-radius: 10px 10px 1px 1px;
+            background-color: #225622;
+            color:white;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+        #latest .latest1
+        {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: red; */
+            height: 8vh;
+            width: 20%;
+            font-size: 20px;
+            border-right: solid 2px gray;;
+           
+        }
+        #cardHead
+        {
+            width: 90%;
+            margin: auto;
+            display: flex;
+        }
+        #cardHead .card
+        {
+            width: 30%;
+            margin-top: 20px;
+
+            border:solid 2px gainsboro;
+            border-radius: 10px;
+            display: flex;
+        }   
+        #cardHead .card .text
+        {
+            margin-top: 20px;
+
+            width:70%;
+            font-size: 20px;
+        }
+        #cardHead .card .img
+        {
+            margin-top: 20px;
+
+            width:30%;
+            
+        }
+        #cardHead .card .img img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .parentText
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        .btn
+        {
+            border-radius: 20px;;
+            text-align: center;
+            width: 30%;
+            background: #225622;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="new-logo.png" alt="">
+        </div>
+        <nav>
+            <ol>
+                <li class="active">Latest Updates</li>
+                <li>Latest Updates</li>
+                <li>Latest Updates</li>
+                <li>Latest Updates</li>
+            </ol>
+        </nav>
+    </header>
+    <div id="marquee">
+        <marquee behavior="" direction="" >This is website</marquee>
+    </div>
+    <div id="banner">
+        <img src="banner.png" alt="">
+    </div>
+    <div id="latest">
+        <span class="latest1">LATEST</span>
+        <!-- <span>|</span> -->
+        <span class="latest2">The Office of Universities & Boards Department is relocated to PRC Towers. 16 September 2022
+
+            CS Directive - Disclosure of Information under section-6 and section-7 of the Sindh Transparency and right to information Act, 2016 07 June 2023</span>
+        
+       </div>
+       <div id="cardHead"> 
+            <div class="card">
+                <div class="parentText">
+                    <div class="text">
+                        Chief Secretary Sindh
+                        Dr. Muhammad Fakhre Alam Irfan
+                    </div>
+                    <div class="btn">Button</div>
+                </div>
+                <div class="img">
+                    <img src="image1.jpeg" alt="">
+                </div>
+               
+            </div>
+            <div class="card">
+                <div class="text">
+                Chief Secretary Sindh
+Dr. Muhammad Fakhre Alam Irfan
+</div>
+<div class="img">
+    <img src="image1.jpeg" alt="">
+</div>
+
+        </div>
+            <div class="deparment">Department</div>
+       </div>
+</body>
+</html> 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main
+        {
+            width: 100%;
+            display: grid;
+            background-color: seagreen;
+            grid-template-columns: 30% 40% 30%;
+            row-gap: 5px;
+            column-gap: 10px;
+        }
+        #main div
+        {
+            border: solid 3px blue;
+            background-color: turquoise;
+        }
+        .header
+        {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .menu
+        {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .footer
+        {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="header">header</div>
+        <div class="menu">menu</div>
+        <div class="main">main</div>
+        <div class="right">right</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

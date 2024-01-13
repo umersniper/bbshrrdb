@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            #main
+      {
+        display: grid;
+        grid-template-columns:auto auto auto auto ;
+        /* display: flex;
+        flex-wrap: wrap; */
+        width: 100%;
+      }
+        ::placeholder
+        {
+            color:red;
+        }
+        ::selection
+        {
+            background:red;
+        }
+        .outer
+        {
+            width: 20%;
+            height: 20vh;
+            border:solid 2px green;
+            perspective: 100px;
+            perspective-origin: bottom;
+        }
+        .inner
+        {
+            background-color: gray;
+            width:100%;
+            height: 20vh;
+            transform: rotateX(0deg);
+            animation-name: td;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        .outer1
+        {
+            width: 20%;
+            height: 20vh;
+            border:solid 2px green;
+        }
+        .inner1
+        {
+            background-color: gray;
+            width:100%;
+            height: 20vh;
+            transform: rotateX(70deg);
+        }
+        @keyframes td {
+            1%
+            {
+                transform: rotateY(0deg);
+
+            }
+            100% 
+            {
+                transform: rotateY(360deg);
+            }
+        }
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+     .c1
+     {
+        /* width:25%; */
+        height: 20vh;
+        border:solid 2px green;
+        /* float: left; */
+        background-color: aquamarine;
+     }
+        @media screen and (max-width:600px){
+            #main
+            {
+                grid-template-columns: 100%;
+            }
+          .c1
+          {
+            /* width: 100%; */
+            background-color: cadetblue;
+          }
+        }
+        @media screen and (min-width:600px) and (max-width:900px){
+            #main
+            {
+                grid-template-columns: auto auto;
+            }
+            .c1
+           {
+            /* width: 50%; */
+            height: 30vh;
+            background-color:thistle;
+           }
+        }
+   
+  
+    </style>
+</head>
+<body>
+  <div id="main">
+    <div class="c1"></div>
+    <div class="c1"></div>
+    <div class="c1"></div>
+    <div class="c1"></div>
+  </div>
+</body>
+</html>
